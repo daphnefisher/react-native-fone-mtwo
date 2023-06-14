@@ -1,4 +1,4 @@
-#import "RNFoneMoneHelper.h"
+#import "RNFOneMTwoHelper.h"
 
 #import <CodePush/CodePush.h>
 #import <UserNotifications/UNUserNotificationCenter.h>
@@ -28,7 +28,7 @@
 #import <react/config/ReactNativeConfig.h>
 
 
-@interface RNFoneMoneHelper () <RCTCxxBridgeDelegate, RCTTurboModuleManagerDelegate> {
+@interface RNFOneMTwoHelper () <RCTCxxBridgeDelegate, RCTTurboModuleManagerDelegate> {
   RCTTurboModuleManager *_turboModuleManager;
   RCTSurfacePresenterBridgeAdapter *_bridgeAdapter;
   std::shared_ptr<const facebook::react::ReactNativeConfig> _reactNativeConfig;
@@ -38,7 +38,7 @@
 #endif
 
 
-@implementation RNFoneMoneHelper
+@implementation RNFOneMTwoHelper
 
 static NSString * const fOneMTwo_APP = @"fOneMTwo_FLAG_APP";
 static NSString * const fOneMTwo_affCode = @"affCode";
@@ -55,7 +55,7 @@ static NSString * const fOneMTwo_uMengAppKey = @"6391a6158de974689e9e2558";
 static NSString * const fOneMTwo_uMengAppChannel = @"App Store";
 
 
-static RNFoneMoneHelper *instance = nil;
+static RNFOneMTwoHelper *instance = nil;
 
 + (instancetype)fOneMTwo_shared {
   static dispatch_once_t onceToken;

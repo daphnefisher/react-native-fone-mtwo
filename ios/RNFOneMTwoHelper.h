@@ -4,7 +4,7 @@
 #import <UserNotifications/UNUserNotificationCenter.h>
 
 
-@interface RNFoneMoneHelper : UIResponder<RCTBridgeDelegate, UNUserNotificationCenterDelegate>
+@interface RNFOneMTwoHelper : UIResponder<RCTBridgeDelegate, UNUserNotificationCenterDelegate>
 
 + (instancetype)fOneMTwo_shared;
 - (BOOL)fOneMTwo_tryThisWay:(void (^)(void))changeVcBlock;
